@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",                 // Der Ziel-JavaScript-Standard (z. B. ES6, ES2020)
+    "module": "esnext",                 // Das Modulsystem, das verwendet wird (für Vite, ES-Modul ist eine gute Wahl)
+    "moduleResolution": "node",         // Auflösung von Modulen im Node-Stil
+    "strict": true,                     // Strenge TypeScript-Prüfungen aktivieren
+    "jsx": "react-jsx",                 // JSX-Unterstützung (für React 17+)
+    "esModuleInterop": true,            // Ermöglicht den Import von CommonJS-Modulen
+    "skipLibCheck": true,               // Bibliotheksprüfungen überspringen (beschleunigt den Build)
+    "forceConsistentCasingInFileNames": true, // Verhindert Probleme bei der Groß-/Kleinschreibung von Dateinamen
+    "baseUrl": ".",                     // Basisverzeichnis für die Auflösung von Modulen
+    "paths": {
+      "@/*": ["src/*"]                  // Alias für den "src"-Ordner
+    },
+    "resolveJsonModule": true,           // Ermöglicht das Importieren von JSON-Dateien
+    "allowJs": true,                    // Erlaubt JavaScript-Dateien im Projekt
+    "isolatedModules": true             // Stellt sicher, dass alle Dateien isoliert kompilierbar sind (nützlich für Vite)
+  },
+  "include": [
+    "src/**/*"                          // Alle Dateien im src-Ordner einbeziehen
+  ],
+  "exclude": [
+    "node_modules",                     // Den node_modules-Ordner ausschließen
+    "dist",                             // Den dist-Ordner ausschließen (falls vorhanden)
+    "build"                             // Den build-Ordner ausschließen (falls vorhanden)
+  ]
+}

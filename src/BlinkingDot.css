@@ -1,0 +1,20 @@
+@keyframes Blink{
+        0%{
+            opacity: 1;
+        }
+                50%{
+            opacity: 0;
+        }
+                100%{
+            opacity: 1;
+        }
+}
+
+.blinkingDot{
+animation: Blink 1s infinite step-start;
+}
+
+.blinkingtext{
+    font-size: 2rem;
+    color: white;
+}
